@@ -9,6 +9,7 @@ jobs:
   build_and_push:
     runs-on: ubuntu-latest
     env:
+      REGISTRY: ghcr.io
       IMAGE_NAME:  ${{ github.repository }}
     steps:
       - name: checkout
